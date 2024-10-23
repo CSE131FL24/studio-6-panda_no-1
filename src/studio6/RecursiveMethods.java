@@ -38,9 +38,10 @@ public class RecursiveMethods {
         StdDraw.circle(xCenter, yCenter, radius);
         
         // Recursive calls for three smaller circles
-        circlesUponCircles(xCenter - radius / 2, yCenter, radius / 2, radiusMinimumDrawingThreshold);
-        circlesUponCircles(xCenter + radius / 2, yCenter, radius / 2, radiusMinimumDrawingThreshold);
-        circlesUponCircles(xCenter, yCenter + radius / 2, radius / 2, radiusMinimumDrawingThreshold);
+        circlesUponCircles(xCenter - radius / 1, yCenter, radius / 3, radiusMinimumDrawingThreshold);
+        circlesUponCircles(xCenter + radius / 1, yCenter, radius / 3, radiusMinimumDrawingThreshold);
+        circlesUponCircles(xCenter, yCenter + radius / 1, radius / 3, radiusMinimumDrawingThreshold);
+        circlesUponCircles(xCenter, yCenter - radius / 1, radius / 3, radiusMinimumDrawingThreshold);
     }
 
     /**
